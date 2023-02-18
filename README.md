@@ -16,7 +16,7 @@ Este projeto é uma página de lista de links simples. O projeto é mais um dos 
 
 ## 📷 Prints
 
-![img](./assets/img/desktop.png) ![img](./assets/img/mobile2.png)
+![img](./assets/img/desktop2.png) ![img](./assets/img/mobile2.png)
 
 
 ## 🛠 Tecnologias
