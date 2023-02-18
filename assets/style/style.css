@@ -1,0 +1,126 @@
+/*css variables*/
+:root {
+    --bodyBgColor: #faf7fd; 
+    --purple: #bb99dd;
+    --hoverColor: #8e46d6;
+}
+
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%; 
+    height: 100vh;
+    background-color: var(--bodyBgColor); 
+    overflow-y: hidden;
+}
+
+.links .link, .social-icons .social-link {
+    transition: all 0.3s ease; 
+}
+
+/*hover*/
+.links .link:hover,
+.links .link:active,
+.social-icons .social-link:hover,
+.social-icons .social-link:active  {
+    color: var(--hoverColor);
+} 
+
+.links .link:hover {
+    border-color: var(--hoverColor); 
+}
+
+
+/*container*/
+.container {
+    width: 80%;
+    max-width: 330px; 
+    margin: 1.4rem auto 0; 
+    text-align: center;
+}
+
+
+/*image section*/
+.container .profile {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.container .profile .profile-img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    display: block; 
+    margin: 0 auto;
+    padding: 5px;
+    border: 2px solid var(--purple); 
+    margin-bottom: 0.8rem;
+}
+
+.container .profile .subtitle {
+    font-weight: 300;
+}
+
+
+/*links section*/
+.links {
+    margin-bottom: 1.7rem;
+    width: 100%;
+}
+
+.links .link{
+    display: block; 
+    width: 100%;
+    text-decoration: none;    
+    font-weight: 600;
+    color: var(--purple);
+    padding: 0.4rem 0;
+    border: 2px solid var(--purple);
+    border-radius: 3px;
+    margin-bottom: 0.8rem;
+
+}
+
+/*social icons section*/
+.social-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+
+}
+
+.social-icons .social-link{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--purple);
+}
+
+
+
+
+
+/*media queries*/
+@media screen and (max-width: 400px){
+    .container { 
+        margin: 1.3rem auto 0; 
+    }
+    
+    /*image section*/
+    .container .profile {
+        margin-bottom: 1rem;
+    }
+
+    .container .links {
+        margin-bottom: 1.4rem;
+    }
+}
